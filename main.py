@@ -12,7 +12,7 @@ from region_loss import RegionLoss
 batch_size=12
 
 # dataset
-dataset=KittiDataset(root='/',set='train')
+dataset=KittiDataset(root='./',set='train')
 data_loader = data.DataLoader(dataset, batch_size, shuffle=True)
 
 model = ComplexYOLO()
